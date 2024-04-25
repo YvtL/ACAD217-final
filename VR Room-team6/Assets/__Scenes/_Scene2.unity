@@ -2961,6 +2961,16 @@ PrefabInstance:
       propertyPath: m_AllowAnchorControl
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9032954039820430273, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_AudioClipForOnSelectEntered
+      value: 
+      objectReference: {fileID: 8300000, guid: 8436c8cf5779f4fbda9ea5a4acee8d73, type: 3}
+    - target: {fileID: 9032954039820430273, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_PlayAudioClipOnSelectEntered
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2,
         type: 3}
       propertyPath: m_UseForceGrab
@@ -2970,6 +2980,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AllowAnchorControl
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_PlayHapticsOnSelectEntered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_AudioClipForOnSelectEntered
+      value: 
+      objectReference: {fileID: 8300000, guid: 8436c8cf5779f4fbda9ea5a4acee8d73, type: 3}
+    - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_PlayAudioClipOnSelectEntered
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_AllowHoverAudioWhileSelecting
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9146015503685400394, guid: 895f6f3c2d334633b5800312285058d2,
+        type: 3}
+      propertyPath: m_AllowHoverHapticsWhileSelecting
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9030,6 +9065,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1255537617}
+  - {fileID: 1913985333}
   m_Father: {fileID: 1567616856}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &814101424
@@ -26264,6 +26300,62 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1716514770}
   m_SourcePrefab: {fileID: 100100000, guid: e3accfd3c0c81704bbd428e1d4fe4b89, type: 3}
+--- !u!1 &1913985332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913985333}
+  - component: {fileID: 1913985334}
+  m_Layer: 0
+  m_Name: Audio Reverb Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1913985333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913985332}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.46, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 814101423}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!167 &1913985334
+AudioReverbZone:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913985332}
+  m_Enabled: 1
+  m_MinDistance: 13.71
+  m_MaxDistance: 18.3
+  m_ReverbPreset: 7
+  m_Room: -1000
+  m_RoomHF: -476
+  m_DecayTime: 4.32
+  m_DecayHFRatio: 0.59
+  m_Reflections: -789
+  m_ReflectionsDelay: 0.02
+  m_Reverb: -289
+  m_ReverbDelay: 0.03
+  m_HFReference: 5000
+  m_Diffusion: 100
+  m_Density: 100
+  m_LFReference: 250
+  m_RoomLF: 0
 --- !u!1 &1920029689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: dd064a5c0439b0047abb102eb6f29451,
